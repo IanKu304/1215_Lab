@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise w12</title>
+    <style>
+
+        #button1{
+            background-color:hotpink;
+            
+        }
+        #button2{
+            background-color:cornflowerblue;
+            
+        }
+        #blue{
+            background-color: blue;
+
+        }
+        #green{
+            background-color: green;
+            
+        }
+        #reset{
+            background-color:deepskyblue;
+        }
+        .parent{
+            text-align: center;
+        }
+        .buttons{
+            color: white;
+            border: none;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "parent">
+        <script>
+            var name;
+            name = window.prompt("Enter your name");
+            document.writeln("<h1>Hello "+name+", welcome to my page</h1>")
+        </script>
+    </div>
+    <div class = "parent">
+        <script>
+            var int1,int2;
+            int1 = window.prompt("Enter first number");
+            int2= window.prompt("Enter second number");
+            document.writeln(parseFloat(int1)+parseFloat(int2))
+        </script>
+    </div>
+
+    <div class = "parent">
+        <div>
+            <h1>Interactive Buttoms</h1>
+        </div>
+        <div >
+            <input type="button" value="1st button" id="button1" class ="buttons"
+            onclick="alert('hello world!');">
+            <input type="button" value="2nd button" id="button2" class ="buttons"
+            onclick="alert('HELLO WORLD!!');">
+            <input type="button" value="blue" id="blue" class ="buttons"
+            onclick="alert('Change the background color');
+                    document.body.style.backgroundColor = 'blue';">
+            <input type="button" value="green"id="green" class ="buttons"
+            onclick="alert('Change the background color');
+                    document.body.style.backgroundColor = 'green';">
+            <input type="button" value="reset background" id = "reset" class ="buttons"
+            onclick="alert('Reset the background color');
+                    document.body.style.backgroundColor = 'white';">
+        </div>
+    </div>
+
+</body>
+</html>
