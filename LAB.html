@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var int1,int2,output ;
+            int1 = parseFloat(window.prompt("Enter first number"));
+            int2=  parseFloat(window.prompt("Enter second number"));
+            
+            if(int1>int2){
+                document.body.style.backgroundColor = 'blue';
+                document.write("firstInput > secondInput");
+            }else if(int1<int2){
+                document.body.style.backgroundColor = 'orange';
+                document.write("firstInput < secondInput");
+            }else{
+                document.body.style.backgroundColor = 'lightyellow';
+                document.write("firstInput == secondInput");
+            }
+        </script>
+        <div >
+            <input type="button" value="1st button" id="button1" class ="buttons"
+            onclick="document.write('int1')">
+            <input type="button" value="2nd button" id="button2" class ="buttons"
+            onclick="document.write('int2')">
+        </div>
+        
+
+    </body>
+</html>
